@@ -2,16 +2,25 @@
 
 An interactive, multilingual web application designed to educate and empower Indian voters by simplifying the electoral process.
 
-## 🌟 Overview
+## 🔗 Live Demo
 
-The Election Assistant provides a centralized platform for citizens to understand election timelines, explore state-specific voting information, and interact with an AI-powered assistant for quick answers to electoral queries.
+Check out the live application here: **[Live Demo Link](https://election-assistant-my-prompt-1-495215.a.run.app)** 
 
-### Key Features
-- **🤖 AI Assistant Chat**: Get instant answers to complex questions about the voting process.
-- **🗺️ State Explorer**: Interactive data visualization for state-wise election information.
-- **⏳ Interactive Timeline**: Visual breakdown of the election phases and important dates.
-- **🗂️ Educational Flashcards**: Quick, bite-sized learning about voting rights and procedures.
-- **🌐 Multilingual Support**: Seamlessly switch between English and Hindi.
+## 🌟 Features
+
+The Election Assistant provides a centralized platform for citizens to understand election timelines, explore state-specific voting information, and interact with an AI-powered assistant.
+
+### 🗳️ Core Modules
+- **🤖 AI Assistant Chat**: An intelligent conversational interface to get instant answers about voting rights, eligibility, and procedures.
+- **🗺️ Interactive State Explorer**: Deep-dive into state-specific data with search functionality and real-time filtering.
+- **⏳ Visual Election Timeline**: A step-by-step interactive roadmap of the election phases, ensuring voters never miss a deadline.
+- **🗂️ Educational Flashcards**: High-impact visual cards that explain complex electoral concepts in simple terms.
+- **🌐 Multilingual (English/Hindi)**: Full localized support to ensure accessibility for a wider audience.
+
+### 🎨 Design & Experience
+- **Modern UI**: Built with a "premium glassmorphism" aesthetic for a clean, professional feel.
+- **Micro-animations**: Smooth transitions and hover effects that enhance user engagement.
+- **Mobile First**: Fully responsive design that works flawlessly on smartphones, tablets, and desktops.
 
 ## 🏗️ Architecture
 
