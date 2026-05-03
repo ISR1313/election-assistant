@@ -1,4 +1,7 @@
-# React + Vite
+# Election Assistant
+An interactive assistant to assist about the Indian election system.
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
