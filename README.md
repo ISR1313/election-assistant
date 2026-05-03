@@ -1,19 +1,77 @@
-# Election Assistant
-An interactive assistant to assist about the Indian election system.
+# 🇮🇳 Election Assistant
 
-## React + Vite
+An interactive, multilingual web application designed to educate and empower Indian voters by simplifying the electoral process.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 Overview
 
-Currently, two official plugins are available:
+The Election Assistant provides a centralized platform for citizens to understand election timelines, explore state-specific voting information, and interact with an AI-powered assistant for quick answers to electoral queries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Key Features
+- **🤖 AI Assistant Chat**: Get instant answers to complex questions about the voting process.
+- **🗺️ State Explorer**: Interactive data visualization for state-wise election information.
+- **⏳ Interactive Timeline**: Visual breakdown of the election phases and important dates.
+- **🗂️ Educational Flashcards**: Quick, bite-sized learning about voting rights and procedures.
+- **🌐 Multilingual Support**: Seamlessly switch between English and Hindi.
 
-## React Compiler
+## 🏗️ Architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```mermaid
+graph TD
+    User([User]) --> App[React App Container]
+    App --> Lang[Language Provider - i18n]
+    Lang --> Header[Header & Language Toggle]
+    Lang --> Dashboard[Main Dashboard]
+    
+    subgraph Components
+        Dashboard --> SE[State Explorer]
+        Dashboard --> FD[Flashcard Deck]
+        Dashboard --> IT[Interactive Timeline]
+        Dashboard --> AC[Assistant Chat]
+    end
+    
+    subgraph Data Layer
+        SE --> Data[(Election Stats)]
+        FD --> Content[Educational Content]
+        IT --> Schedule[Phase Dates]
+        AC --> AI[AI Prompt Logic]
+    end
+```
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 18, Vite
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Icons**: Lucide React
+- **Containerization**: Docker
+- **Web Server**: Nginx
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ISR1313/election-assistant.git
+   cd election-assistant
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run in development mode:
+   ```bash
+   npm run dev
+   ```
+
+### Docker Deployment
+The project is container-ready for easy deployment:
+```bash
+docker build -t election-assistant .
+docker run -p 8080:80 election-assistant
+```
+
+## 📄 License
+Distributed under the MIT License.
